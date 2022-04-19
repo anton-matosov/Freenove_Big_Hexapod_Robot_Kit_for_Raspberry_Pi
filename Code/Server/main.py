@@ -35,7 +35,12 @@ class MyWindow(QMainWindow,Ui_server):
         
         
     def parseOpt(self):
-        self.opts,self.args = getopt.getopt(sys.argv[1:],"tn")
+        self.opts,self.args = getopt.getopt(sys.argv[1:],"tnw:")
+        for o,a in self.opts:
+            if o in ('-w'):
+                print(f'Waiting {a} seconds...')
+                time.sleep(float(a))
+                print(f'Resuming...')
         for o,a in self.opts:
             if o in ('-t'):
                 print ("Open TCP")
