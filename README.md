@@ -1,3 +1,15 @@
+# Hexapod
+
+## Inverse Kinematics Math
+
+https://toglefritz.com/hexapod-inverse-kinematics-equations/
+
+
+
+
+
+
+
 ## Freenove Big Hexapod Robot Kit for Raspberry Pi
 
 > A Hexapod Robot Kit for Raspberry Pi.
